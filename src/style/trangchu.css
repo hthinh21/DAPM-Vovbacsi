@@ -1,0 +1,128 @@
+/* .banner{
+    width: 100%;
+    height: 300px;
+    background-image: url(https://vovbacsi24.com/img/img_skin/banner-03.jpg);
+    background-image: url(https://vovbacsi24.com/img/img_skin/banner-04.jpg);
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+.search-home{
+    width: auto;
+    height: 64px;
+    color: #333333;
+    background: #EBEBEB;
+
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+  
+}
+
+.form-select{
+    padding: 6px 12px;
+}
+
+
+.row-default{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 500px;
+    
+}
+
+
+.col-md-9{
+    padding: 0px 15px;
+   background:rgb(132, 187, 187);
+}
+.col-md-3{
+    background: rgba(127, 255, 212, 0.681);
+}
+ 
+.border-bv{
+    width: 55px;
+    height: 3px;
+    margin:5px 0px;
+    background-color: #2285e2;
+}
+.link{
+    background-color: chocolate;
+    height: 244.8px;
+}
+.footer{
+    width: auto;
+    height: auto;
+    background: blanchedalmond;
+} */
+
+.search-home{
+    width: auto;
+    height: 64px;
+    color: #333333;
+    background: #EBEBEB;
+
+}
+.row-default{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-height: 500px;
+    
+}
+.container{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0px 12px;
+    width: 1170px;
+    /* width: 100%;
+    height: 64px; */
+  
+}
+ .container-search{
+    box-sizing: border-box;
+    width: 1170px;
+    height: 64px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ .form-select{
+    padding: 6px 12px;
+ }
+ .col{
+    padding-left: 12px;
+    padding-right: 12px;
+ }
+ .row-listbv{
+    padding-top: 10px;
+    width: 1170px;
+    
+ }
+.row{
+    font-weight: 700;
+    font-size: 24px;
+}
+.link{
+    background-color: chocolate;
+    height: 244.8px;
+}
+.footer{
+    width: auto;
+    height: auto;
+    background: blanchedalmond;
+} 

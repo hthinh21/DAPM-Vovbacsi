@@ -1,0 +1,69 @@
+/* .main-content{
+    width: auto;
+    height: 2890.82px;
+    background-color: rgb(155, 155, 155) ;
+}
+.col-md-9{
+    padding: 0px 15px;
+    background: rgb(154, 215, 215);
+}
+.col-md-3{
+    background: rgba(127, 255, 212, 0.681);
+}
+
+.link{
+    background-color: chocolate;
+    height: 244.8px;
+}
+.footer{
+    width: auto;
+    height: 313.56px;
+    background: blanchedalmond;
+} */
+
+.img-custom {
+  /* max-width: 100%;
+  height: auto;
+  object-fit: cover */
+  height: 200px; /* Đặt chiều cao cố định cho ảnh */
+  object-fit: cover; /* Giúp ảnh lấp đầy khung mà không bị vỡ */
+  width: 100%;
+}
+.col-custom {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+}
+.card-body {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .g-4{
+    padding: 0 15;
+} */
+.container {
+  
+  padding: 0 15px;
+  width: auto;
+}
+.row-name{
+    width: auto;
+    height: 47.28px;
+}
+.row{
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  
+}
