@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import List from "./List";
 import GridExample from "./GridExample";
+import ListBenh from "./ListBenh";
 
 const TrangChu = () => {
   return (
@@ -146,23 +147,79 @@ const TrangChu = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                <text>BỆNH VIỆN</text>
+                <h3>BỆNH VIỆN</h3>
+                <List />
+                <h3>BỆNH THƯỜNG GẶP</h3>
+                <ListBenh />
               </div>
               <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 Tin tức
               </div>
             </div>
-            <div className="row-listbv">
-              <List />
-            </div>
-            <div className="row-listbenh">
-
-              
+          </div>
+          {/* link tải app */}
+          <div className="row-link">
+            <div className="link-app">
+              <div className="container-link">
+                <div className="row row-app">
+                  <div className="col-md-9">
+                    <p className="slogan-footer">
+                      <span className="slogan">Bác sĩ ơi!</span>
+                      <br></br>
+                      <text>"Đừng để kiến thức và kinh nghiệm uổng phí."</text>
+                      <br></br>
+                      <text>
+                        "Hãy giúp chúng tôi - những bệnh nhân càng nhiều càng
+                        tốt."
+                      </text>
+                    </p>
+                  </div>
+                  <div className="col-md-3">
+                    <p className="download-title">TẢI ỨNG DỤNG CHO BỆNH NHÂN</p>
+                    <div className="download-icon">
+                      <p>
+                        <a
+                          href="https://apps.apple.com/vn/app/vov-bacsi24/id1202785310?ign-mpt=uo%3D4"
+                          target="_blank"
+                        >
+                          <img src="https://vovbacsi24.com/img/img_skin/btn-appstore.png"></img>
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.vov.bacsi24.patient&pli=1"
+                          target="_blank"
+                        >
+                          <img src="https://vovbacsi24.com/img/img_skin/btn-ggplay.png"></img>
+                        </a>
+                      </p>
+                    </div>
+                    <p className="download-title">TẢI ỨNG DỤNG CHO BÁC SĨ</p>
+                    <div className="download-icon">
+                      <p>
+                        <a
+                          href="https://apps.apple.com/vn/app/vov-bacsi24/id1202785310?ign-mpt=uo%3D4"
+                          target="_blank"
+                        >
+                          <img src="https://vovbacsi24.com/img/img_skin/btn-appstore.png"></img>
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.vov.bacsi24.patient&pli=1"
+                          target="_blank"
+                        >
+                          <img src="https://vovbacsi24.com/img/img_skin/btn-ggplay.png"></img>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="list">Bệnh thường gặp</div>
-        <div className="link">link</div>
+
         <div className="footer">footer</div>
       </div>
     </>

@@ -27,6 +27,7 @@
   object-fit: cover */
   height: 200px; /* Đặt chiều cao cố định cho ảnh */
   object-fit: cover; /* Giúp ảnh lấp đầy khung mà không bị vỡ */
+  
   width: 100%;
 }
 .col-custom {

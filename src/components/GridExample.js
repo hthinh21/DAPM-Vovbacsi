@@ -17,24 +17,44 @@ const GridExample = () => {
   ];
   const title = [
     "TTYK Medic - Hòa Hảo",
-    "TTYK Chuyên Sâu Quốc Tế Bernard",
+    "TTYK Quốc Tế Bernard",
     "Bệnh viện Quốc tế City",
     "BV Quốc tế Mỹ - AIH",
     "PKĐK Hoàn Mỹ Sài Gòn",
     "BVĐK Tâm Trí Sài Gòn",
-    "PKĐK MEDICAL DIAG CENTER",
+    "PKĐK DIAG CENTER",
     "PKĐK - ĐHYK Phạm Ngọc Thạch",
   ];
 
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className="col col-md-9 col-sm-12 col-xs-12">
-            {/* <div className="title">
+            <div className="title">
               <div className="row-name">BỆNH VIỆN</div>
               <br></br>
-            </div> */}
+            </div>
+            <Row xs={6} md={4} className="g-4">
+              {Array.from({ length: 4 }).map((_, idx) => (
+              {img.map((img, idx) => (
+                <Col key={idx} className="col-custom">
+                  <Card className="card">
+                    <Card.Img variant="top" src={img} className="img-custom" />
+                    <Card.Body>
+                      <Card.Title>{title[idx]}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </div>
+          <div className="col col-md-3 col-sm-12 col-xs-12">Tin tức</div>
+        </div>
+      </div> */}
+
+
+ 
             <Row xs={6} md={4} className="g-4">
               {/* {Array.from({ length: 4 }).map((_, idx) => ( */}
               {img.map((img, idx) => (
@@ -48,10 +68,8 @@ const GridExample = () => {
                 </Col>
               ))}
             </Row>
-          </div>
-          {/* <div className="col col-md-3 col-sm-12 col-xs-12">Tin tức</div> */}
-        </div>
-      </div>
+            
+        
     </>
   );
 };
