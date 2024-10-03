@@ -1,20 +1,34 @@
+import {  Route, Routes } from "react-router-dom";
 
 // import './App.css';
-import './style/header.css';
-import './style/allstyle.css';
+import "./style/header.css";
+import "./style/allstyle.css";
 
-import GridExample from './components/GridExample';
-import List from './components/List';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import TrangChu from './components/TrangChu';
+import "bootstrap/dist/css/bootstrap.min.css";
+import TrangChu from "./components/TrangChu";
+import Register from "./components/Register";
+import Login from "./components/Login";
 
-// import Header from './components/Header';
+
+
 // import TrangChu from './components/TrangChu';
+
 function App() {
   return (
-    <TrangChu/>
-   
+ 
+
+    <>
+      <Routes>
+        <Route path="/" element={<TrangChu/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
+
+        
+      </Routes>
+    </>
+    
   );
 }
+
 
 export default App;
