@@ -6,6 +6,8 @@ import Header from "./Header";
 import List from "./List";
 import GridExample from "./GridExample";
 import ListBenh from "./ListBenh";
+import Footer from "./Footer";
+
 
 const TrangChu = () => {
   return (
@@ -220,7 +222,7 @@ const TrangChu = () => {
           </div>
         </div>
 
-        <div className="footer">footer</div>
+        <Footer/>
       </div>
     </>
   );
