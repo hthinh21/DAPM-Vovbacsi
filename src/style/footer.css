@@ -40,6 +40,7 @@
 }
 .text-18{
     font-size: 18px;
+    margin:0;
 }
 .border-bt-blue {
     display: inline-block;
@@ -65,4 +66,7 @@
 }
 .footer-menu > ul > li {
     list-style: none; 
+}
+.footer-menu > ul {
+    padding-left: 0;
 }

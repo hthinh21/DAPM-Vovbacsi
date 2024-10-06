@@ -1,5 +1,5 @@
 .register-background {
-    background-image: url("https://vovbacsi24.com/img/img_skin/doctor-bg.jpg");
+    /* background-image: url("https://vovbacsi24.com/img/img_skin/doctor-bg.jpg"); */
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,12 +13,14 @@
 .register-container {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(12px);
-    padding: 50px;
+   
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     width: 350px;
     text-align: center;
     position: relative;
+    margin: 0 auto;
+    max-width: 400px;
 }
 .register-container img {
     max-width: 150px;
@@ -52,7 +54,7 @@ h2 {
     background: rgba(255, 255, 255, 0.8);
 }
 .form-group button {
-    width: 100%;
+    
     padding: 12px;
     background-color: #ff7e5f;
     color: white;
@@ -77,4 +79,17 @@ h2 {
 }
 .link a:hover {
     color: #ffe680;
+}
+.main-content-register{
+    padding-top: 10px;
+}
+.section{
+    clear: both;
+    height: 414px;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }

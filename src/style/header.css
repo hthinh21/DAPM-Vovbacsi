@@ -46,3 +46,16 @@
     margin-left: auto; /* Đẩy navbar-right sang bên phải */
     color: #777777;
 }
+.link-bsi{
+    position: absolute;
+    z-index: 999999999;
+    /* width: 150px;
+    right: 0; */
+    color: #358AE1;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: right;
+    top:0;
+}
