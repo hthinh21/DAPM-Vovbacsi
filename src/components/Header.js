@@ -1,9 +1,18 @@
+import React, { useState } from "react";
+
 import "../style/header.css";
 import "../style/allstyle.css";
 import { Link } from "react-router-dom";
-import DropDownMenu from "./DropDownMenu";
+
+
 
 const Header = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+    
   return (
     <>
       <div className="header">
@@ -16,26 +25,22 @@ const Header = () => {
           <ul className="navbar-left">
             <li className="trChu">
               {" "}
-              <a href="/">TRANG CHỦ</a>{" "}
+              <Link to="/">TRANG CHỦ</Link>
             </li>
             <li className="capCuu">
               {" "}
               <Link to="/sos">CẤP CỨU</Link>
             </li>
             <li className="gioiThieu">
-              {" "}
-             
-              <a
-                href="#"
-                class="dropdown-toggle"
-                data-toggle="dropdown"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="true"
-              >
-                GIỚI THIỆU<span class="caret"></span>
-              </a>
-              <ul className="dropdown-menu">
+            <button
+              className="dropdown-toggle"
+              onClick={toggleDropdown}
+              aria-expanded={isDropdownOpen}
+            >
+              GIỚI THIỆU <span className="caret"></span>
+            </button>
+            {isDropdownOpen && (
+              <ul className="dropdown-menu show">
                 <li>
                   <Link to="/gioithieu">Giới thiệu chung</Link>
                 </li>
@@ -52,7 +57,7 @@ const Header = () => {
                   <Link to="/coche">Cơ chế giải quyết tranh chấp</Link>
                 </li>
               </ul>
-              
+            )}
             </li>
           </ul>
           <ul className="navbar-right">
