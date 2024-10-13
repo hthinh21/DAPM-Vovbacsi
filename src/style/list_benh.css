@@ -1,0 +1,32 @@
+.img-cus {
+  /* max-width: 100%;
+    height: auto;
+    object-fit: cover */
+  height: auto; /* Đặt chiều cao cố định cho ảnh */
+  width: 100%;
+  object-fit: cover; /* Giúp ảnh lấp đầy khung mà không bị vỡ */
+}
+.col-cus {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.card {
+  height: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.card-body {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
