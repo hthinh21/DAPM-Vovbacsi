@@ -1,0 +1,64 @@
+/* .hoidap-list {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+}
+.hoidap-list .hd-01 {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.hoidap-list .hd-01 .cauhoi {
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+.row {
+    padding: 0;
+    margin: 0;
+} */
+
+ /* Định dạng chung cho danh sách hướng dẫn */
+.huongdan-list {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    
+  }
+  
+  /* Định dạng cho mỗi mục hướng dẫn */
+  .huongdan-01 {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  /* Định dạng cho nội dung câu hỏi */
+  .huongdan-01 .content {
+    padding: 0px 0px 5px;
+    font-size: 16px;
+  }
+  
+  /* Điều chỉnh margin và padding cho .row để tránh khoảng trống */
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Định dạng cho link title */
+  .huongdan-01 .title {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .huongdan-01 .title:hover {
+    color: #007bff;
+  }
+  
+  /* Định dạng cho biểu tượng */
+  .huongdan-01 .glyphicon-menu-right {
+    margin-right: 10px;
+  }
+  
