@@ -6,11 +6,13 @@ import "./style/header.css";
 import "./style/allstyle.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import TrangChu from "./components/TrangChu";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import CapCuu from "./components/CapCuu";
 import ChiTietCapCuu from "./components/ChiTietCapCuu";
+import Profile from "./components/Profile";
 
 // import TrangChu from './components/TrangChu';
 
@@ -24,6 +26,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/sos" element={<CapCuu />} />
         <Route path="/sos/sos-detail" element={<ChiTietCapCuu />} />
+        <Route path ="profile" element={<Profile/>}/>
       </Routes>
     </SnackbarProvider>
   );

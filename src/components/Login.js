@@ -25,7 +25,7 @@ function Login() {
             name: result.data.user.name,
             email: result.data.user.email,
           };
-          localStorage.setItem("user", JSON.stringify(user));
+          localStorage.setItem("userInfo", JSON.stringify(user));
           enqueueSnackbar("Đăng nhập thành công", { variant: "success" });
           navigate("/");
         } else {
@@ -97,7 +97,7 @@ function Login() {
             <button type="submit">Đăng nhập</button>
           </div>
         </form>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}{" "}
+        
         {/* Hiển thị lỗi */}
         <div className="link">
           <a href="/user/forget-password">Quên mật khẩu?</a>

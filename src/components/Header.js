@@ -1,22 +1,27 @@
 import "../style/header.css";
 import "../style/allstyle.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [user, setUser] = useState(null);
+  const [loggedInUser, setLoggedInUser] = useState(null);
+  const navigate = useNavigate();
 
-  // Kiểm tra xem có thông tin người dùng trong localStorage hay không
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("user");
-    if (loggedInUser) {
-      setUser(JSON.parse(loggedInUser));
+    
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    if (userInfo) {
+      setLoggedInUser(userInfo); 
     }
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("user"); // Xóa thông tin người dùng khi logout
-    setUser(null); // Cập nhật trạng thái user về null
+    localStorage.removeItem("userInfo"); 
+    setLoggedInUser(null); 
+    navigate("/")
   };
 
   return (
@@ -49,16 +54,16 @@ const Header = () => {
             </li>
           </ul>
           <ul className="navbar-right">
-            {user ? (
-              // Hiển thị tên người dùng và nút Logout nếu đã đăng nhập
-              <>
-                <li className="account-name">
-                  Xin chào, {user.name}
-                </li>
-                <li className="logout">
-                  <button onClick={handleLogout}>ĐĂNG XUẤT</button>
-                </li>
-              </>
+          {loggedInUser ? (
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {loggedInUser.name} {/* Hiển thị tên người dùng */}
+                </a>
+                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><Link className="dropdown-item" to="/profile">Thông tin tài khoản</Link></li>
+                  <li><button className="dropdown-item" onClick={handleLogout}>Đăng xuất</button></li>
+                </ul>
+              </li>
             ) : (
               // Hiển thị nút Đăng ký và Đăng nhập nếu chưa đăng nhập
               <>
@@ -71,6 +76,8 @@ const Header = () => {
               </>
             )}
           </ul>
+            
+          
         </div>
       </div>
     </>
