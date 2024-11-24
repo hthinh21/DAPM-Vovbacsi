@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; /* Đảm bảo body không có margin */
+}
+.header{
+    margin: 0;
+    width: 1519.2px;
+    height: 75px;
+    color: #333333;
+    background-color: #f8f8f8;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.nav-bar{
+    
+    width: 1140px;
+    height: 70.4px ;
+    
+    padding: 0px 15px;
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+   
+}
+.navbar-left {
+    list-style-type: none; /* Bỏ bullet */
+    padding: 35px 15px 13px;
+    margin: 0; /* Bỏ margin mặc định */
+    display: flex;
+    gap: 20px; 
+    align-items: center; /* Căn giữa theo chiều dọc */
+    color: #777777;
+}
+.navbar-right{
+    list-style-type: none; /* Bỏ bullet */
+    padding: 35px 15px 13px;
+    margin: 0; /* Bỏ margin mặc định */
+    display: flex;
+    gap: 20px; 
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: auto; /* Đẩy navbar-right sang bên phải */
+    color: #777777;
+}
+.link-bsi{
+    position: absolute;
+    z-index: 999999999;
+    /* width: 150px;
+    right: 0; */
+    color: #358AE1;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: right;
+    top:0;
+}
+.navbar-left li a{
+    color: #777;
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+.navbar-right li a{
+    color:#777;
+    text-decoration: none; /* Bỏ gạch chân */
+}
+.gioiThieu button {
+    color: #777; /* Chỉnh màu chữ thành #777 */
+    background: none; /* Bỏ nền nếu có */
+    border: none; /* Bỏ viền nếu cần */
+  }
+.dropdown-menu {
+    display: none; /* Ẩn menu mặc định */
+    
+  }
+  
+  .dropdown-menu.show {
+    display: block; /* Hiển thị menu khi được kích hoạt */
+  }
+  .dropdown-menu li a {
+    color: #777; /* Chỉnh màu chữ thành đen */
+    text-decoration: none; /* Bỏ gạch chân */
+  }
+  .dropdown-toggle {
+    border: none; /* Bỏ khung */
+    background-color: transparent; /* Nếu muốn nền trong suốt */
+    outline: none; /* Bỏ viền khi nhấn vào (trong một số trình duyệt) */
+    box-shadow: none; /* Loại bỏ bất kỳ hiệu ứng đổ bóng nào nếu có */
+  }

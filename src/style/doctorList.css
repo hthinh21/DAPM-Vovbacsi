@@ -1,0 +1,35 @@
+style/doctorList.css
+.doctor-list {
+  text-align: center;
+}
+
+.doctor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.doctor-card {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.doctor-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+/* Tùy chỉnh cho ảnh */
+.img-cus {
+  height: 195px; /* Đặt chiều cao cố định cho ảnh */
+  width: 195px; /* Đặt chiều rộng cố định cho ảnh */
+  object-fit: cover; /* Giúp ảnh lấp đầy khung mà không bị vỡ */
+  border-radius: 8px; /* Bo góc cho ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+  transition: all 0.3s ease; /* Thêm hiệu ứng khi hover */
+}
+/* Tùy chỉnh cho cột */
+.col-cus {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Tùy chỉnh cho thẻ card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Chiều rộng của thẻ card */
+  height: 100%;
+  border: none; /* Loại bỏ viền của card */
+  border-radius: 8px; /* Tạo bo góc cho thẻ card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng khi hover */
+ 
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Tăng nhẹ khi hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Thay đổi đổ bóng khi hover */
+}
+
+/* Tùy chỉnh cho phần nội dung của card */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Tùy chỉnh cho tiêu đề card */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Tùy chỉnh cho phần mô tả card (nếu có) */
+.card-body p {
+  color: #777;
+  font-size: 0.9rem;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Tùy chỉnh cho các cột trong Carousel */
+.carousel-item {
+  padding:  0;
+}
+
+

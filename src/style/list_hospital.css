@@ -1,0 +1,73 @@
+
+/* Card bệnh viện */
+.card-custom {
+  width: 100%; /* Card chiếm hết chiều rộng của cột */
+  height: 232.75px; /* Chiều cao cố định để có tỷ lệ hình chữ nhật */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 15px; /* Khoảng cách giữa ảnh và card */
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Ảnh bệnh viện */
+.img-custom {
+  width: 234.8px; /* Chiều rộng ảnh */
+  height: 117.55px; /* Chiều cao ảnh */
+  object-fit: cover; /* Đảm bảo ảnh vừa khít mà không bị méo */
+  margin: 0 auto; /* Căn giữa ảnh trong card */
+  border-bottom: 1px solid #ddd; /* Thêm viền dưới cho ảnh */
+  padding-bottom: 15px; /* Khoảng cách giữa ảnh và body card */
+}
+
+/* Nội dung bên trong Card */
+.card-body {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-body .card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Tùy chỉnh cột */
+.col-custom {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+  padding-bottom: 12px;
+}
+
+/* Tùy chỉnh Carousel */
+.carousel-indicators {
+  padding-top: 15px;
+  bottom: -30px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #888;
+}
+
+.carousel-indicators .active {
+  background-color: #333;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
